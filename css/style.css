@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(243, 241, 233);
+}
+
+
+
+.accordion{
+    width: 70vw;
+    background-color: antiquewhite;
+    text-align: left;
+    margin: 50px auto;
+    border-top: 5px rgb(5, 5, 69) solid;
+    box-shadow: 5px 5px 6px rgb(207, 201, 201);
+    
+}
+.accordion-item{
+    margin:25px;
+    padding: 15px;
+}
+p.accordion-content{
+    display: none;
+   
+}
+.accordion-title{
+    position: relative;
+  
+}
+.accordion-title::before{
+    content: '+';
+    font-size: 20px;
+    color: midnightblue;
+    position: absolute;
+    left:-16px ;
+    font-weight: 700;
+}
+.open .accordion-title::before{
+    content: '-';
+}
